@@ -16,9 +16,7 @@ function AllBalances({ username }) {
     const fetcher = async () => {
       await setLodingBalances(true);
 
-      const d = await fetchBalances(
-        "0x087e9c8ef2d97740340a471ff8bb49f5490f6cf6"
-      );
+      const d = await fetchBalances(account);
       console.log({ d });
       await setLodingBalances(false);
 
