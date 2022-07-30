@@ -17,14 +17,14 @@ export const walletconnect = new WalletConnectConnector({
 export const uauthCore = new UAuth({
   // postLogoutRedirectUri: "http://localhost:3000/logout",
   clientID: process.env.NEXT_PUBLIC_UD_CLIENT_ID,
-  redirectUri: "/",
+  redirectUri: process.env.NEXT_PUBLIC_UD_REDIRECT,
   scope: "openid wallet",
   // Scope must include openid and wallet
 });
 export const uauth = new UAuthConnector({
   // postLogoutRedirectUri: "http://localhost:3000/logout",
   clientID: process.env.NEXT_PUBLIC_UD_CLIENT_ID,
-  redirectUri: "/",
+  redirectUri: process.env.NEXT_PUBLIC_UD_REDIRECT,
   scope: "openid wallet",
   // Scope must include openid and wallet
 
