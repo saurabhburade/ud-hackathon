@@ -6,6 +6,7 @@ import { HiMenuAlt1, HiMoon, HiSun } from "react-icons/hi";
 import Link from "next/link";
 import ConnectWalletModal from "../ConnectWallet/ConnectWalletModal";
 import SelectChainModal from "../SelectChain/SelectChain";
+import Image from "next/image";
 
 type Props = {};
 
@@ -18,7 +19,7 @@ const Header = (props: Props) => {
           <div className="flex items-center justify-between">
             <Link href="/">
               <p className="font-bold text-transparent text-md bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">
-                Token Balances
+                <img src="/DeWealth-p-logo.svg" className="w-24" />
               </p>
             </Link>
             {/* <button
